@@ -1,9 +1,8 @@
-import pandas as pandasLib
+import random
+w = random.randint(-10, 10)
+b = random.randint(-10, 10)
 
-dataFrame1MonJeuDeDonneeDentrainement = pandasLib.read_csv("donnervrai.csv")
+print("Poids (w) initial :", w)
+print("Biais (b) initial :", b)
 
-X = dataFrame1MonJeuDeDonneeDentrainement["vitesse"].tolist()
-Y = dataFrame1MonJeuDeDonneeDentrainement["danger"].tolist()
-
-print("Tableau X (Vitesse) :", X)
-print("Tableau Y (Danger) :", Y)
+fruits = ["Pomme", "Banane", "Cerise", "Date", "Fraise", "Kiwi"]
